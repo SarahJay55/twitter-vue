@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <section id="app" class="hero is-light is-bold is-fullheight">
+    <section id="app" class="hero is-light is-bold is-fullheight" v-if:"tweet">
         <div class="hero-body">
             <div class="container">
                 <input type="text" class="input" v-model="query" @keyup="searchTwitter">
@@ -51,6 +51,9 @@
 
             </div>
         </div>
+    </section>
+    <section>
+        No matching Tweets.
     </section>
 
     <script>
